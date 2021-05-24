@@ -1,0 +1,15 @@
+.tabs {
+    display: flex;
+    h4 {
+      color: #a6a6a6; 
+      margin-right: 20px;
+      @extend %pointer;
+      @extend %margin30;
+      outline: none;
+
+      &.active {
+          color: black;
+          transition: 0.1s ease-in;
+      }
+    }
+  }

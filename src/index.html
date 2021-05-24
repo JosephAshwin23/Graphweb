@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.1/dist/chart.min.js"></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <section class="side-menu">
+      <img src="./icons/SVG/Asset 2.svg" alt="" />
+      <div class="users">
+        <figure>
+          <span class="online"></span>
+          <img
+            class="user-pic"
+            src="./images/ian-dooley-d1UPkiFd04A-unsplash.jpg"
+            alt=""
+          />
+        </figure>
+        <figure>
+          <span class="online"></span>
+          <img class="user-pic" src="./images/brown.jpg" alt="" />
+        </figure>
+        <figure>
+          <img class="user-pic" src="./images/asain.jpg" alt="" />
+        </figure>
+        <figure>
+          <img class="user-pic" src="./images/long.jpg" alt="" />
+        </figure>
+        <figure>
+          <span class="online"></span>
+          <img class="user-pic" src="./images/salt.jpg" alt="" />
+        </figure>
+        <figure>
+          <img class="user-pic" src="./images/suit.jpg" alt="" />
+        </figure>
+        <figure>
+          <img class="user-pic" src="./images/boy.jpg" alt="" />
+        </figure>
+      </div>
+
+      <div class="functions">
+        <img src="./icons/users.svg" alt="" />
+        <img src="./icons/calendar.svg" alt="" />
+        <img src="./icons/notificaton.svg" alt="" />
+        <img src="./icons/setting.svg" alt="" />
+      </div>
+    </section>
+
+    <main>
+      <header>
+        <nav>
+          <li class="active" id="request">Request</li>
+          <li id="reviews">Reviews</li>
+          <li id="credit">Credit</li>
+          <li id="help">Help</li>
+        </nav>
+        <input type="text" placeholder="Search" />
+        <img
+          class="user-pic"
+          src="./images/ian-dooley-d1UPkiFd04A-unsplash.jpg"
+          alt=""
+        />
+      </header>
+
+      <section class="main-content">
+        <div class="left-side">
+          <div class="heading">
+            <h4><span class="online"></span> Jack M.</h4>
+            <h4 class="typing hide">
+              is typing
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </h4>
+          </div>
+
+          <div id="chat-box" class="chat-box">
+            <h5>Today</h5>
+            <div class="received">
+              <img
+                class="user-pic"
+                src="./images/ian-dooley-d1UPkiFd04A-unsplash.jpg"
+                alt=""
+              />
+              <div class="message">
+                <p class="message-text">This is what I got in mind!</p>
+                <img class="attach-pic" src="./images/1906.jpg" alt="" />
+                <div class="video">
+                  <video
+                    controls
+                    poster="./images/a464541231c126b454389c480d02e3b4.jpg"
+                  >
+                    <source src="" />
+                  </video>
+                  <figure>
+                    <img src="./icons/message-arrow.svg" alt="" />
+                  </figure>
+                </div>
+
+                <img class="attach-pic" src="./images/7067-3.jpg" alt="" />
+                <p class="message-date">10:39 AM</p>
+              </div>
+            </div>
+            <div id="sent" class="sent">
+              <div class="message">
+                <p class="message-text">
+                  Let’s see… I think it shouldn’t be a problem. I’ll call my
+                  furniture supplier and I see what he can do!
+                </p>
+                <p class="message-date">
+                  10:39 AM
+                  <img class="read" src="./icons/tick (1).svg" alt="" />
+                </p>
+              </div>
+              <img class="user-pic" src="./images/salt.jpg" alt="" />
+            </div>
+          </div>
+          <div class="type-box">
+            <input
+              type="text"
+              placeholder="Type a message"
+              required="required"
+            />
+            <button class="btn">
+              <img src="/src/icons/send.svg" alt="" />
+            </button>
+          </div>
+
+          <div class="tabs">
+            <h4 class="active">Activity</h4>
+            <h4>Notes</h4>
+          </div>
+          <div class="log">
+            <div class="log-item">
+              <img src="./icons/ac.svg" alt="" />
+              <p><span class="away"></span> Call Glenn M.</p>
+              <div class="log-status">Call</div>
+              <img src="./icons/trash (1).svg" alt="" />
+            </div>
+            <div class="log-item">
+              <img src="./icons/ac.svg" alt="" />
+              <p><span class="online"></span> Meet Glenn M.</p>
+              <div class="log-status">
+                Appoinment <img src="./icons/cancel.svg" alt="" />
+              </div>
+              <img src="./icons/trash (1).svg" alt="" />
+            </div>
+            <div class="log-add">
+              <img src="./icons/add.svg" alt="" />
+              <p>Add new activity</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <div class="heading">
+            <h4><span class="away"></span> Request views</h4>
+            <p>This week <img src="./icons/down-arrow.svg" alt="" /></p>
+          </div>
+          <div class="graph">
+            <canvas id="myChart"></canvas>
+          </div>
+          <div class="upgrade">
+            <div>
+              <img class="bg-circle" src="./icons/oval-6-copy.svg" alt="" />
+              <img class="icon" src="./icons/badge.svg" alt="" />
+              <p>Chance to get hired</p>
+              <h3>+47%</h3>
+              <img class="curve" src="./icons/SVG/Asset 1.svg" alt="" />
+            </div>
+
+            <hr />
+
+            <div>
+              <button class="btn">Upgrade</button>
+              <div>
+                <img class="user-pic" src="./images/boy.jpg" alt="" />
+                <img class="user-pic" src="./images/brown.jpg" alt="" />
+                <img class="user-pic" src="./images/suit.jpg" alt="" />
+              </div>
+              <p>+22 others did!</p>
+            </div>
+          </div>
+
+          <div class="choose">
+            <p>Users who chose you</p>
+            <img class="more" src="/src/icons/more.svg" alt="" />
+            <h3>12 <span>This month</span></h3>
+          </div>
+          <div class="answered">
+            <p>Users who hasn’t answered</p>
+            <img class="more" src="/src/icons/more.svg" alt="" />
+            <h3>06<span>This month</span></h3>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

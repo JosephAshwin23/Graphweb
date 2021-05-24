@@ -1,0 +1,23 @@
+main {
+  flex-grow: 1;  
+  overflow-y: scroll;
+  background: $bg-purple;
+
+  .visibility {
+    visibility: hidden;
+  }
+
+  .main-content {    
+    @include flex(row, space-around, initial);
+    padding: 40px 50px;
+    padding-top: 130px;        
+  }
+
+  .left-side {
+    width: 60%;
+  }
+
+  .right-side {
+    width: 35%;
+  }
+}

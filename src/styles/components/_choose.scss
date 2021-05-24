@@ -1,0 +1,32 @@
+.more {
+    width: 20px;
+}
+
+.choose,.answered {
+    background: white;
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @extend %margin30;
+
+    h3 {
+        flex-basis: 100%;
+        font-size: 30px;
+        color: $skyblue;
+        margin-top: 10px;
+    }
+
+    span {
+        font-size: 14px;
+        color: #a6a6a6;
+        margin-left: 10px;
+    }
+   
+}
+
+.answered {
+    h3 {
+        color: #ff6d4a;
+    }
+}

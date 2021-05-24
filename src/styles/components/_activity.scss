@@ -1,0 +1,17 @@
+.online {
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+    background: $active-green;
+    border-radius: 100%;
+    vertical-align: middle;
+  }
+
+.away {
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  background: $skyblue;
+  border-radius: 100%;
+  vertical-align: middle;
+}  

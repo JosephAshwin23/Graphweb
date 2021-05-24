@@ -1,0 +1,44 @@
+.side-menu {
+  @include flex(column,space-between,center);  
+  padding: 30px;
+  border-right: 0.5px solid $grey;
+
+  &>img {
+      width: 35px; 
+      @extend %pointer;
+  }
+
+  .users,
+  .functions {
+    @include flex(column,space-between,center);    
+  }
+
+  .users {
+    height: 280px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    figure {
+      @extend %relative;
+      @extend %pointer;
+      margin-bottom: 10px
+    }
+
+    span {
+      @extend %absolute;
+      right: 0;
+      border: 3px solid white;
+    }
+
+  }
+
+  .functions {
+    height: 200px;
+    img {
+      width: 23px; 
+      @extend %pointer;     
+    }
+  }
+}

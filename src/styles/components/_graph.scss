@@ -1,0 +1,22 @@
+.heading {
+    @include flex(row,space-between,center);
+
+    p {
+      font-size: 12px;
+      color: #a6a6a6;
+      @extend %pointer;
+    }
+    img {
+      width: 10px;
+      vertical-align: middle;
+      
+    }
+  }
+
+
+.graph {
+    height: 200px;
+    background: white;
+    @extend %margin30;
+    @extend %boxcurved;  
+}
