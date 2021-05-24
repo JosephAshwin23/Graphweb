@@ -1,5 +1,6 @@
 .more {
     width: 20px;
+    @extend %pointer;
 }
 
 .choose,.answered {

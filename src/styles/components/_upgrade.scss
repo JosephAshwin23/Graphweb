@@ -14,6 +14,14 @@
     z-index: 2;
   }
 
+  .img-collection {
+    img {
+      &:nth-child(2),&:nth-child(3) {
+        margin-left: -10px;
+      }
+    }
+  }
+
   hr {
     margin: 25px 0;
     border: none;

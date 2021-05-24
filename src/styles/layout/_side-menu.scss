@@ -3,7 +3,7 @@
   padding: 30px;
   border-right: 0.5px solid $grey;
 
-  &>img {
+  a img {
       width: 35px; 
       @extend %pointer;
   }
@@ -17,13 +17,25 @@
     height: 280px;
     overflow-y: scroll;
 
+    img {     
+      &::after {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: green;
+      }
+    }
+
     &::-webkit-scrollbar {
       display: none;
     }
     figure {
       @extend %relative;
       @extend %pointer;
-      margin-bottom: 10px
+      margin-bottom: 10px;
+      position: relative;     
+     
     }
 
     span {

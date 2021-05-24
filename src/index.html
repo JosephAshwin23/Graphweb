@@ -15,37 +15,10 @@
 
   <body>
     <section class="side-menu">
-      <img src="./icons/SVG/Asset 2.svg" alt="" />
-      <div class="users">
-        <figure>
-          <span class="online"></span>
-          <img
-            class="user-pic"
-            src="./images/ian-dooley-d1UPkiFd04A-unsplash.jpg"
-            alt=""
-          />
-        </figure>
-        <figure>
-          <span class="online"></span>
-          <img class="user-pic" src="./images/brown.jpg" alt="" />
-        </figure>
-        <figure>
-          <img class="user-pic" src="./images/asain.jpg" alt="" />
-        </figure>
-        <figure>
-          <img class="user-pic" src="./images/long.jpg" alt="" />
-        </figure>
-        <figure>
-          <span class="online"></span>
-          <img class="user-pic" src="./images/salt.jpg" alt="" />
-        </figure>
-        <figure>
-          <img class="user-pic" src="./images/suit.jpg" alt="" />
-        </figure>
-        <figure>
-          <img class="user-pic" src="./images/boy.jpg" alt="" />
-        </figure>
-      </div>
+      <a href="javascript:location.reload();"
+        ><img src="./icons/SVG/Asset 2.svg" alt=""
+      /></a>
+      <div class="users"></div>
 
       <div class="functions">
         <img src="./icons/users.svg" alt="" />
@@ -139,32 +112,22 @@
             <h4 class="active">Activity</h4>
             <h4>Notes</h4>
           </div>
-          <div class="log">
-            <div class="log-item">
-              <img src="./icons/ac.svg" alt="" />
-              <p><span class="away"></span> Call Glenn M.</p>
-              <div class="log-status">Call</div>
-              <img src="./icons/trash (1).svg" alt="" />
-            </div>
-            <div class="log-item">
-              <img src="./icons/ac.svg" alt="" />
-              <p><span class="online"></span> Meet Glenn M.</p>
-              <div class="log-status">
-                Appoinment <img src="./icons/cancel.svg" alt="" />
-              </div>
-              <img src="./icons/trash (1).svg" alt="" />
-            </div>
-            <div class="log-add">
+          <div class="log"></div>
+          <div class="log-add">
               <img src="./icons/add.svg" alt="" />
               <p>Add new activity</p>
             </div>
-          </div>
         </div>
 
         <div class="right-side">
           <div class="heading">
             <h4><span class="away"></span> Request views</h4>
-            <p>This week <img src="./icons/down-arrow.svg" alt="" /></p>
+            <button class="btn">This Week <img src="./icons/down-arrow.svg" alt="" /></button>
+            <ul class="dropdown">
+              <li>Trending</li>
+              <li>Latest</li>
+              <li>Old</li>             
+            </ul>
           </div>
           <div class="graph">
             <canvas id="myChart"></canvas>
@@ -182,7 +145,7 @@
 
             <div>
               <button class="btn">Upgrade</button>
-              <div>
+              <div class="img-collection">
                 <img class="user-pic" src="./images/boy.jpg" alt="" />
                 <img class="user-pic" src="./images/brown.jpg" alt="" />
                 <img class="user-pic" src="./images/suit.jpg" alt="" />

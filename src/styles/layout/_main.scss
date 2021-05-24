@@ -8,7 +8,7 @@ main {
   }
 
   .main-content {    
-    @include flex(row, space-around, initial);
+    @include flex(row, space-between, initial);
     padding: 40px 50px;
     padding-top: 130px;        
   }

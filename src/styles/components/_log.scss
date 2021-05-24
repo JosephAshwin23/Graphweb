@@ -1,5 +1,14 @@
 
   .log {
+
+    .online-color {
+      color: $active-green;
+    }
+    
+    .away-color {
+      color: $skyblue;
+    }
+
     &-item {     
       @include flex(row,center,center);
       background-color: white;
@@ -37,21 +46,18 @@
     &-status {
       background-color: rgba(67, 146, 241, 0.1);
       display: inline-block;
-      padding: 3px 12px;
-      color: $skyblue;
+      padding: 3px 12px;      
       font-size: 12px;
     }
 
-    &-item {
-      &:nth-child(2) {
-        .log-status {
-          color: $active-green;
+    &-item {      
+        .log-status {          
           img {
             width: 6px;
             margin-left: 7px;
           }
         }
-      }
+      
     }
 
     &-add {
@@ -69,8 +75,7 @@
       p {
         font-size: 16px;
         color: $skyblue;
-        display: inline-block;
-        
+        display: inline-block;        
       }
     }
   }
